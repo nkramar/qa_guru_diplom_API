@@ -95,7 +95,7 @@ public class ReqresInApiTest {
   @Feature("Сортировка возвращаемых данных")
   @Story("Операция LIST<RESOURCE> с сортировкой по годам")
   @Description("Проверка того, что операция LIST<RESOURCE> возвращает данные отсортированные по годам")
-  @DisplayName("Проверка сортировки по годам")
+  @DisplayName("Проверка сортировки данных по годам")
   public void sortedYearsTest() {
     Specifications.installSpecification(Specifications.requestSpec(baseURL), Specifications.responseSpec200());
     List<ColorsData> colors = given()
