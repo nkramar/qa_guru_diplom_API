@@ -51,7 +51,7 @@ ____
 ## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/">**Сборка в Jenkins**</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/"><img src="images/JenkinsJob.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/"><img src="images/JenkinsJobAPI.png" alt="Jenkins"/></a>  
 </p>
 
 
