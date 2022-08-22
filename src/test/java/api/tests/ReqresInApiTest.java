@@ -8,6 +8,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class ReqresInApiTest {
 
   private final static String baseURL = "https://reqres.in/";
 
-
+  @Tag("API")
   @Test
   @Owner("nkramar")
   @Feature("Аватар и email")
@@ -46,7 +47,7 @@ public class ReqresInApiTest {
     List<String> avatars = users.stream().map(UserData::getAvatar).collect(Collectors.toList());
     List<String> ids = users.stream().map(x -> x.getId().toString()).collect(Collectors.toList());
   }
-
+  @Tag("API")
   @Test
   @Owner("nkramar")
   @Feature("Регистрация")
@@ -71,7 +72,7 @@ public class ReqresInApiTest {
     Assertions.assertEquals(id, successfulReg.getId());
     Assertions.assertEquals(token, successfulReg.getToken());
   }
-
+  @Tag("API")
   @Test
   @Owner("nkramar")
   @Feature("Регистрация")
@@ -89,7 +90,7 @@ public class ReqresInApiTest {
             .extract().as(UnSuccessfulRegData.class);
     Assertions.assertEquals("Missing password", unSuccessfulReg.getError());
   }
-
+  @Tag("API")
   @Test
   @Owner("nkramar")
   @Feature("Сортировка возвращаемых данных")
@@ -110,7 +111,7 @@ public class ReqresInApiTest {
     System.out.println(years);
     System.out.println(sortedYears);
   }
-
+  @Tag("API")
   @Test
   @Owner("nkramar")
   @Feature("Удаление пользователя")
