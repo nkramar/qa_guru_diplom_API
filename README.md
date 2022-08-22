@@ -102,7 +102,7 @@ ___
 ## *Тест кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="images/Allure_TestOps_Test_Cases.png">  
+<img title="Allure TestOps Tests" src="images/TestOpsTests.png">  
 </p>
 
 ___
@@ -110,7 +110,7 @@ ___
 ## <img src="images/Jira.svg" width="25" height="25"  alt="Allure"/></a>*Интеграция с* <a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1318">Jira</a>
 
 <p align="center">  
-<img title="Jira" src="images/Jira_Ticket.png">  
+<img title="Jira" src="images/JiraTicket.png">  
 </p>
 
 ____
