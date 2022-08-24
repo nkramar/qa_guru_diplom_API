@@ -6,19 +6,22 @@
 </p>
 
 
-### :green_book: *Содержание*
-- *Технологии и инструменты*
-- *Примеры автоматизированных тест кейсов*
-- *Сборка в Jenkins*
-- *Команды для запуска из терминала*
-- *Allure отчёт*
-- *Интреграция с Allure TestOps*
-- *Интеграция с Jira*
-- *Уведомление в Telegram при помощи Alert bot*
+<a name="cодержание"></a>
 
-____
+# :green_book: *Содержание*
++ [Технологии и инструменты](#Technology)
++ [Примеры автоматизированных тест кейсов](#TestCases)
++ [Запуск тестов в Jenkins](#Jenkins)
++ [Команды для запуска из терминала](#SystemProperty)
++ [Отчет о результатах тестирования в Allure](#AllureReport)
++ [Интеграция с Allure TestOps](#AllureTestOps)
++ [Интеграция с Jira](#Jira)
++ [Уведомление в Telegram при помощи Alert bot](#Telegram)
 
-## :computer: *Технологии и инструменты*
+
+<h1 align="left">
+<a name="Technology"><i>Технологии и инструменты</i></a>
+</h1>
 
 <p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="images/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
@@ -36,9 +39,11 @@ ____
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="images/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
 
-____
 
-## *Примеры автоматизированных тест кейсов*
+<h1 align="left">
+<a name="TestCases"><i>Примеры автоматизированных тест кейсов</i></a>
+</h1>
+
 - :white_check_mark: Проверка успешной регистрации пользователя
 - :white_check_mark: Проверка неуспешной регистрации пользователя
 - :white_check_mark: Проверка сортировки данных по годам
@@ -46,17 +51,19 @@ ____
 - :white_check_mark: Проверка аватара на содержание правильного id и окончания email
 
 
-____
+<h1 align="left">
+<img src="images/Jenkins.svg" width="25" height="25" alt="Jenkins"/>  <a name="Jenkins"><i>Запуск тестов в Jenkins</i></a>
+</h1>
 
-## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/">**Сборка в Jenkins**</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests">**Сборка в Jenkins**</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/"><img src="images/JenkinsJobAPI.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests"><img src="images/JenkinsJobAPI.png" alt="Jenkins"/></a>  
 </p>
 
 
-____
-## :keyboard: *Команды для запуска из терминала*
+<h1 align="left">
+<a name="SystemProperty"><i>Команды для запуска из терминала</i></a>
+</h1>
 
 ***Локальный запуск:***
 ```bash  
@@ -67,9 +74,13 @@ gradle clean test
 ```bash  
 clean test
 ```
+<h1 align="left">
+<img src="images/Allure_Report.svg" width="25" height="25" alt="Allure_Report"/>  <a name="AllureReport"><i>Отчет о результатах тестирования в Allure </i></a>
+</h1>
 
-## <img src="images/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> *Allure* <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/">*отчёт*</a>
-___
+<a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_diplom_API_tests/">**Отчёт в Jenkins**</a>
+<p align="center">  
+
 
 ### *Основная страница отчёта*
 
@@ -89,9 +100,13 @@ ___
 <img title="Allure Graphics" src="images/Allure_Charts.png">  
 </p>
 
-___
+<h1 align="left">
+<img src="images/AllureTestOps.svg" width="25" height="25" alt="AllureTestOps"/> <a name="AllureTestOps"><i>Интеграция с Allure TestOps</i></a>
+</h1>
 
-## <img src="images/AllureTestOps.svg" width="25" height="25"  alt="Allure"/></a>*Интеграция с* <a target="_blank" href="https://allure.autotests.cloud/launch/15399/tree/155237?treeId=0">*Allure TestOps*</a>
+<a target="_blank" href="https://allure.autotests.cloud/launch/15399/tree/155237?treeId=0">**Проект в TestOps**</a>
+<p align="center">  
+
 
 ## *Allure TestOps Dashboard*
 
@@ -105,21 +120,25 @@ ___
 <img title="Allure TestOps Tests" src="images/TestOpsTests.png">  
 </p>
 
-___
+<h1 align="left">
+<img src="images/Jira.svg" width="25" height="25" alt="Jira"/> <a name="Jira"><i>Интеграция с Jira</i></a>
+</h1>
 
-## <img src="images/Jira.svg" width="25" height="25"  alt="Allure"/></a>*Интеграция с* <a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1318">Jira</a>
+<a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1318">**Тикет в Jira**</a>
+<p align="center"> 
 
 <p align="center">  
 <img title="Jira" src="images/JiraTicket.png">  
 </p>
 
-____
-## <img src="images/Telegram.svg" width="25" height="25"  alt="Allure"/></a> *Уведомление в Telegram при помощи Alert bot*
+<h1 align="left">
+<img src="images/Telegram.svg" width="25" height="25"  alt="Allure"/> <a name="Telegram"><i>Уведомление в Telegram при помощи Alert bot</i></a>
+</h1>
 
 <p align="center">  
 <img title="Allure Overview Dashboard" src="images/Telegram_bot.png">  
 </p>
 
-
+[Наверх ⬆](#содержание)
 
 
