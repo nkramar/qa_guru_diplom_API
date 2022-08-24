@@ -1,5 +1,5 @@
 
-<h1 align="center"> Проект по автоматизации тестирования API для сайта REQRES.IN  <a target="_blank" href="https://reqres.in/"></a> </h1>
+<h2 align="center"> Проект по автоматизации тестирования API для сайта REQRES.IN  <a target="_blank" href="https://reqres.in/"></a> </h2>
 
 <p align="center">
 <img title="ReqresIn" src="images/reqresInLogo.png">
