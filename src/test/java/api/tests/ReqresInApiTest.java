@@ -1,7 +1,7 @@
 package api.tests;
 
 import api.specs.Specifications;
-import api.testdata.*;
+import api.models.*;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
@@ -37,8 +37,11 @@ public class ReqresInApiTest {
             .filter(withCustomTemplates())
             .when()
             .get("api/users?page=2")
-            .then().log().all()
-            .extract().body().jsonPath().getList("data", UserData.class);
+            .then()
+            .log().all()
+            .extract()
+            .body()
+            .jsonPath().getList("data", UserData.class);
 
     users.forEach(x -> Assertions.assertTrue(x.getAvatar().contains(x.getId().toString())));
     Assertions.assertTrue(users.stream().allMatch(x -> x.getEmail().endsWith("@reqres.in")));
@@ -64,7 +67,8 @@ public class ReqresInApiTest {
             .body(user)
             .when()
             .post("api/register")
-            .then().log().all()
+            .then()
+            .log().all()
             .extract().as(SuccessfulRegData.class);
     Assertions.assertNotNull(successfulReg.getId());
     Assertions.assertNotNull(successfulReg.getToken());
@@ -85,7 +89,8 @@ public class ReqresInApiTest {
             .filter(withCustomTemplates())
             .body(user)
             .post("api/register")
-            .then().log().all()
+            .then()
+            .log().all()
             .extract().as(UnSuccessfulRegData.class);
     Assertions.assertEquals("Missing password", unSuccessfulReg.getError());
   }
@@ -102,8 +107,10 @@ public class ReqresInApiTest {
             .filter(withCustomTemplates())
             .when()
             .get("api/unknown")
-            .then().log().all()
-            .extract().body().jsonPath().getList("data", ColorsData.class);
+            .then()
+            .log().all()
+            .extract()
+            .body().jsonPath().getList("data", ColorsData.class);
     List<Integer> years = colors.stream().map(ColorsData::getYear).collect(Collectors.toList());
     List<Integer> sortedYears = years.stream().sorted().collect(Collectors.toList());
     Assertions.assertEquals(sortedYears, years);
@@ -122,7 +129,8 @@ public class ReqresInApiTest {
             .filter(withCustomTemplates())
             .when()
             .delete("api/users/2")
-            .then().log().all();
+            .then()
+            .log().all();
   }
 
 }

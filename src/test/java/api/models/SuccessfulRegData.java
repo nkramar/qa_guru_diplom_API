@@ -1,4 +1,4 @@
-package api.testdata;
+package api.models;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.Data;
