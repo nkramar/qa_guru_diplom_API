@@ -29,7 +29,6 @@ public class ReqresInApiTest {
   @Description("Получение списка со 2й страницы, проверка того, что имена файлов-аватаров содержат правильные id и " +
           "что email пользователей содержит окончание '@reqres.in'")
   @DisplayName("Проверка аватара на содержание правильного id и окончания email")
-
   public void checkAvatarAndIdTest() {
 
     Specifications.installSpecification(Specifications.requestSpec(baseURL), Specifications.responseSpec200());
@@ -50,7 +49,7 @@ public class ReqresInApiTest {
   @Tag("API")
   @Test
   @Owner("nkramar")
-  @Feature("Регистрация")
+  @Feature("Регистрация пользователя")
   @Story("Успешная регистрания пользователя")
   @DisplayName("Проверка успешной регистрации пользователя")
   public void successfulRegistrationTest() {
@@ -75,7 +74,7 @@ public class ReqresInApiTest {
   @Tag("API")
   @Test
   @Owner("nkramar")
-  @Feature("Регистрация")
+  @Feature("Регистрация пользователя")
   @Story("Неуспешная регистрания пользователя")
   @DisplayName("Проверка неуспешной регистрации пользователя")
   public void unSuccessfulRegistrationTest() {
