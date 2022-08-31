@@ -28,6 +28,7 @@ public class Specifications {
             .expectStatusCode(400)
             .build();
   }
+
   public static ResponseSpecification responseSpecUnique(int status) {
     return new ResponseSpecBuilder()
             .expectStatusCode(status)
