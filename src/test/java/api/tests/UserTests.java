@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import static helpers.RestAssuredListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 
-public class ReqresInApiTest {
+public class UserTests {
 
   private final static String baseURL = "https://reqres.in/";
 
@@ -45,7 +45,6 @@ public class ReqresInApiTest {
 
     users.forEach(x -> Assertions.assertTrue(x.getAvatar().contains(x.getId().toString())));
     Assertions.assertTrue(users.stream().allMatch(x -> x.getEmail().endsWith("@reqres.in")));
-
   }
 
   @Test
@@ -134,6 +133,5 @@ public class ReqresInApiTest {
             .then()
             .log().all();
   }
-
 }
 
