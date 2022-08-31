@@ -7,8 +7,6 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static helpers.RestAssuredListener.withCustomTemplates;
-
 public class Specifications {
   public static RequestSpecification requestSpec(String url) {
     return new RequestSpecBuilder()
