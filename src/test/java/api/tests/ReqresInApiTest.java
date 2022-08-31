@@ -21,8 +21,8 @@ public class ReqresInApiTest {
 
   private final static String baseURL = "https://reqres.in/";
 
-  @Tag("API")
   @Test
+  @Tag("API")
   @Owner("nkramar")
   @Feature("Аватар и email")
   @Story("Аватары с правильным id и окончание email пользователей")
@@ -49,8 +49,9 @@ public class ReqresInApiTest {
     List<String> avatars = users.stream().map(UserData::getAvatar).collect(Collectors.toList());
     List<String> ids = users.stream().map(x -> x.getId().toString()).collect(Collectors.toList());
   }
-  @Tag("API")
+
   @Test
+  @Tag("API")
   @Owner("nkramar")
   @Feature("Регистрация пользователя")
   @Story("Успешная регистрания пользователя")
@@ -75,8 +76,9 @@ public class ReqresInApiTest {
     Assertions.assertEquals(id, successfulReg.getId());
     Assertions.assertEquals(token, successfulReg.getToken());
   }
-  @Tag("API")
+
   @Test
+  @Tag("API")
   @Owner("nkramar")
   @Feature("Регистрация пользователя")
   @Story("Неуспешная регистрания пользователя")
@@ -94,8 +96,9 @@ public class ReqresInApiTest {
             .extract().as(UnSuccessfulRegData.class);
     Assertions.assertEquals("Missing password", unSuccessfulReg.getError());
   }
-  @Tag("API")
+
   @Test
+  @Tag("API")
   @Owner("nkramar")
   @Feature("Сортировка возвращаемых данных")
   @Story("Операция LIST<RESOURCE> с сортировкой по годам")
@@ -117,8 +120,9 @@ public class ReqresInApiTest {
     System.out.println(years);
     System.out.println(sortedYears);
   }
-  @Tag("API")
+
   @Test
+  @Tag("API")
   @Owner("nkramar")
   @Feature("Удаление пользователя")
   @Story("Успешное удаление пользователя")
