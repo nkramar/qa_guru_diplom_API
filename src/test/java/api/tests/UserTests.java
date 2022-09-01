@@ -10,10 +10,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
 import java.util.stream.Collectors;
-
 import static helpers.RestAssuredListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 
@@ -103,6 +101,7 @@ public class UserTests {
   @DisplayName("Проверка сортировки данных по годам")
   public void sortedYearsTest() {
     Specifications.installSpecification(Specifications.requestSpec(baseURL), Specifications.responseSpec200());
+
     List<ColorsData> colors = given()
             .filter(withCustomTemplates())
             .when()
@@ -126,6 +125,7 @@ public class UserTests {
   @DisplayName("Проверка удаления пользователя")
   public void deleteUserTest() {
     Specifications.installSpecification(Specifications.requestSpec(baseURL), Specifications.responseSpecUnique(204));
+
     given()
             .filter(withCustomTemplates())
             .when()
